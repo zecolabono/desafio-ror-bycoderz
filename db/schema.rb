@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_24_193250) do
 
   create_table "transactions", force: :cascade do |t|
     t.string "credit_card"
-    t.string "beneficary_document"
+    t.string "beneficiary_document"
     t.float "amount"
     t.datetime "created_at"
     t.bigint "company_id"

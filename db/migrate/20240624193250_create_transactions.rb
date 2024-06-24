@@ -2,7 +2,7 @@ class CreateTransactions < ActiveRecord::Migration[7.1]
   def change
     create_table :transactions do |t|
       t.string :credit_card
-      t.string :beneficary_document
+      t.string :beneficiary_document
       t.float :amount
       t.datetime :created_at
       t.references :company, foreign_key: true
