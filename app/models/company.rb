@@ -1,3 +1,3 @@
 class Company < ApplicationRecord
-	has_many :transactions
+  has_many :transactions
 end
