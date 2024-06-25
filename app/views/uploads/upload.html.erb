@@ -1,20 +1,12 @@
-<% if flash[:notice] %>
-  <div class="notice"><%= flash[:notice] %></div>
-<% elsif flash[:alert] %>
-  <div class="alert"><%= flash[:alert] %></div>
-<% end %>
-
 <%= form_with url: perform_upload_path, local: true, html: { multipart: true } do |form| %>
-  <div class='container'>
-    <div>
-      <%= form.label :file, "Escolha um arquivo para enviar:" %>
-      
-    </div>
-    <div>
-      <%= form.file_field :file %>
-    </div>
-    <div>
-      <%= form.submit 'Enviar' %>
-    </div>
   <div>
+    <%= form.label :file, "Escolha um arquivo para enviar:" %>
+      
+  </div>
+  <div>
+    <%= form.file_field :file %>
+  </div>
+  <div class = 'submit-button'>
+    <%= form.submit 'Enviar' %>
+  </div>
 <% end %>

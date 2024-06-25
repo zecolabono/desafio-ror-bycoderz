@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="/upload">Upload</a></li>
+        <li><a href="/companies">Listagem de Empresas</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <%= yield %>
+    </div>
+  </div>
   </body>
 </html>

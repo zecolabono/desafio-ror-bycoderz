@@ -1,0 +1,25 @@
+<div class="content">
+  <h2>Listagem de Empresas</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Nome do Dono</th>
+        <th>Saldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @companies.each do |company| %>
+        <tr onclick="window.location='/transactions/<%= company.id %>'" style="cursor: pointer;">
+          <td><%= company.name %></td>
+          <td><%= company.owner_name %></td>
+          <% if company.balance < 0 %>
+            <td class="negative-balance"><%= number_to_currency(company.balance.abs, unit: 'R$', separator: ',', delimiter: '.') %></td>
+          <% else %>
+            <td class="positive-balance"><%= number_to_currency(company.balance, unit: 'R$', separator: ',', delimiter: '.') %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
