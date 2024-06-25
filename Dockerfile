@@ -5,5 +5,4 @@ RUN apt-get update -y
 RUN apt-get install -y nodejs
 RUN npm install -g yarn
 COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install

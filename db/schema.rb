@@ -10,32 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_24_193250) do
+ActiveRecord::Schema[7.1].define(version: 20_240_624_193_250) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "companies", force: :cascade do |t|
-    t.string "name"
-    t.string "owner_name"
-    t.float "balance", default: 0.0
+  create_table 'companies', force: :cascade do |t|
+    t.string 'name'
+    t.string 'owner_name'
+    t.float 'balance', default: 0.0
   end
 
-  create_table "transaction_types", force: :cascade do |t|
-    t.string "description"
-    t.string "operator"
+  create_table 'transaction_types', force: :cascade do |t|
+    t.string 'description'
+    t.string 'operator'
   end
 
-  create_table "transactions", force: :cascade do |t|
-    t.string "credit_card"
-    t.string "beneficiary_document"
-    t.float "amount"
-    t.datetime "created_at"
-    t.bigint "company_id"
-    t.bigint "transaction_type_id"
-    t.index ["company_id"], name: "index_transactions_on_company_id"
-    t.index ["transaction_type_id"], name: "index_transactions_on_transaction_type_id"
+  create_table 'transactions', force: :cascade do |t|
+    t.string 'credit_card'
+    t.string 'beneficiary_document'
+    t.float 'amount'
+    t.datetime 'created_at'
+    t.bigint 'company_id'
+    t.bigint 'transaction_type_id'
+    t.index ['company_id'], name: 'index_transactions_on_company_id'
+    t.index ['transaction_type_id'], name: 'index_transactions_on_transaction_type_id'
   end
 
-  add_foreign_key "transactions", "companies"
-  add_foreign_key "transactions", "transaction_types"
+  add_foreign_key 'transactions', 'companies'
+  add_foreign_key 'transactions', 'transaction_types'
 end
