@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'uploads#upload'
 
   # Companies
-  get 'index', to: 'companies#index'
+  get 'companies', to: 'companies#index'
 
   # Uploads
   get 'upload', to: 'uploads#upload'

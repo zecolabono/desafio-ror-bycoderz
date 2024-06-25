@@ -1,9 +1,11 @@
 class Transactions::IndexByCompany
   attr_accessor :company_id
 
-  def initialize(_company_id)
-    @company_id = company
+  def initialize(company_id)
+    @company_id = company_id
   end
 
-  def execute; end
+  def execute
+    Transaction.where(company_id:)
+  end
 end

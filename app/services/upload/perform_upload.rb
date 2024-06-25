@@ -16,8 +16,8 @@ class Upload::PerformUpload
 
   def format_company(line)
     {
-      name: line[48..61].strip,
-      owner_name: line[62..80].strip
+      name: line[62..80].strip,
+      owner_name: line[48..61].strip
     }
   end
 
