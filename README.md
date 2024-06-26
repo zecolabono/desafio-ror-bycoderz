@@ -7,9 +7,9 @@
 
 ## Para subir o projeto:
 
-`docker-compose up -d -build`
+`docker-compose up --build`
 
-O `-build` será usado apenas na primeira vez que utilizar o comando.
+O `--build` será usado apenas na primeira vez que utilizar o comando.
 
 ## Para acessar a app:
 

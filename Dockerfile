@@ -4,5 +4,5 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get update -y
 RUN apt-get install -y nodejs
 RUN npm install -g yarn
-COPY Gemfile /myapp/Gemfile
+COPY Gemfile /app/Gemfile
 RUN bundle install
