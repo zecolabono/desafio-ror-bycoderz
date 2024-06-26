@@ -7,13 +7,13 @@
 
 ## Para subir o projeto:
 
-`docker-compose up --build`
+`docker-compose up --build` ou `docker compose up --build`
 
 O `--build` será usado apenas na primeira vez que utilizar o comando.
 
 ## Para acessar a app:
 
-`localhost:3000`
+`localhost:3001`
 
 ## Para rodar os testes:
 
