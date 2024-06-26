@@ -1,0 +1,195 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/app/app/models/company.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/models/transaction.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          9,
+          2,
+          null,
+          7,
+          null,
+          null,
+          9,
+          9,
+          null,
+          null
+        ]
+      },
+      "/app/app/models/transaction_type.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/app/app/controllers/companies_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          4,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/app/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/controllers/transactions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          4,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/app/app/controllers/uploads_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/app/app/services/companies/create.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/app/app/services/transactions/create.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/app/app/services/transactions/index_by_company.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "/app/app/services/upload/perform_upload.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1719364974
+  }
+}
