@@ -27,7 +27,7 @@ class Upload::PerformUpload
       company_id:,
       amount: format('%.2f', line[9..18].to_f / 100),
       beneficiary_document: line[19..29],
-      credit_card: line[30..41],
+      card_number: line[30..41],
       created_at: line[1..8] + line[42..47]
     }
   end

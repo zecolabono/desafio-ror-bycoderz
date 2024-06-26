@@ -22,7 +22,7 @@
         <td><%= transaction.transaction_type.description %></td>
         <td class="<%= transaction.transaction_type.operator == TransactionType::OUT_OPERATOR ? 'negative-balance' : 'positive-balance' %>"><%= number_to_currency(transaction.amount.abs, unit: 'R$', separator: ',', delimiter: '.') %></td>
         <td><%= transaction.beneficiary_document %></td>
-        <td><%= transaction.credit_card %></td>
+        <td><%= transaction.card_number %></td>
         <td><%= transaction.created_at.strftime("%d/%m/%Y") %></td>
         <td><%= transaction.created_at.strftime("%H:%M:%S") %></td>
       </tr>

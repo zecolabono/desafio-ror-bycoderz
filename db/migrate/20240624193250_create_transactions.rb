@@ -1,7 +1,7 @@
 class CreateTransactions < ActiveRecord::Migration[7.1]
   def change
     create_table :transactions do |t|
-      t.string :credit_card
+      t.string :card_number
       t.string :beneficiary_document
       t.float :amount
       t.datetime :created_at
