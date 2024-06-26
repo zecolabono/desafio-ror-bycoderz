@@ -24,7 +24,7 @@ gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
-
+gem 'json', '2.6.3'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
@@ -48,16 +48,24 @@ gem 'bootsnap', require: false
 
 gem 'rubocop', require: false
 
+gem 'json', '2.7.2'
+
 gem 'pry', '~> 0.14.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'database_cleaner'
+
   gem 'debug', platforms: %i[mri windows]
+
   gem 'factory_bot_rails'
+
   gem 'rails-controller-testing'
+
   gem 'rspec-rails', '6.1.1'
+
   gem 'shoulda-matchers'
+  
   gem 'simplecov', require: false
 end
 
