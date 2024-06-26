@@ -1,11 +1,11 @@
 # Executando o projeto localmente
 
-### Instalação necessaria para rodar a aplicação.
+## Instalação necessaria para rodar a aplicação.
 
 - Docker
 - Docker compose
 
-### Para subir o projeto:
+## Para subir o projeto:
 
 `docker-compose up -d`
 
