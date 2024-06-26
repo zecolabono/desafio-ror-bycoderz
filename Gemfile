@@ -24,7 +24,7 @@ gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
-gem 'json', '2.6.3'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
@@ -65,7 +65,7 @@ group :development, :test do
   gem 'rspec-rails', '6.1.1'
 
   gem 'shoulda-matchers'
-  
+
   gem 'simplecov', require: false
 end
 
