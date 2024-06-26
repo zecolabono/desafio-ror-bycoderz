@@ -1,24 +1,22 @@
-# README
+# Executando o projeto localmente
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Instalação necessaria para rodar a aplicação.
 
-Things you may want to cover:
+- Docker
+- Docker compose
 
-* Ruby version
+### Para subir o projeto:
 
-* System dependencies
+`docker-compose up -d`
 
-* Configuration
+## Para acessar a app:
 
-* Database creation
+`localhost:3000`
 
-* Database initialization
+## Para rodar os testes:
 
-* How to run the test suite
+`docker exec -ti web rspec`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Documentação da api
 
-* Deployment instructions
-
-* ...
+https://documenter.getpostman.com/view/36552902/2sA3drHEdf
